@@ -1,12 +1,12 @@
 #!/usr/bin/python3
+
 """
-Rectangle Module
-Contains class Rectangle
-An empty class
+This module contains the Rectangle class.
 """
 
 class Rectangle:
 	"""
-		An empty class named Rectangle
-		"""
-
+	A class that represents a rectangle.
+	Currently an empty class with no properties or methods.
+	"""
+	
