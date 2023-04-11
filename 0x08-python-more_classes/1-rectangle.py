@@ -1,16 +1,16 @@
 #!/usr/bin/python3
-"""Defines a Rectangle class."""
+"""Construct a Rectangle class."""
 
 
 class Rectangle:
-    """Represent a rectangle."""
+    """Stand for a rectangle."""
 
     def __init__(self, width=0, height=0):
-        """Initialize a new Rectangle.
+        """Starting point for the Rectangle.
 
         Args:
-            width (int): The width of the new rectangle.
-            height (int): The height of the new rectangle.
+            width (int): The width of rectangle.
+            height (int): The height of rectangle.
         """
         self._width = 0
         self._height = 0
@@ -18,17 +18,17 @@ class Rectangle:
         self.height = height
 
     def __str__(self):
-        """Return a string representation of the rectangle."""
+        """Return a string representing rectangle."""
         return f"Rectangle({self.width}, {self.height})"
 
     @property
     def width(self):
-        """Get the width of the rectangle."""
+        """Obtain width of rectangle."""
         return self._width
 
     @width.setter
     def width(self, value):
-        """Set the width of the rectangle."""
+        """get width of the rectangle."""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -37,12 +37,12 @@ class Rectangle:
 
     @property
     def height(self):
-        """Get the height of the rectangle."""
+        """Obtain height rectangle."""
         return self._height
 
     @height.setter
     def height(self, value):
-        """Set the height of the rectangle."""
+        """Obtain height rectangle."""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
