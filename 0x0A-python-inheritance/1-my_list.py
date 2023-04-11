@@ -3,13 +3,13 @@
 contains the MyList class
 """
 
+
 class MyList(list):
-    def __init__(self, *args, **kwargs):
-        super(MyList, self).__init__(*args, **kwargs)
-        
-    def get_first(self):
-        return self[0] if len(self) > 0 else None
+    """a subclass of list"""
+    def __init__(self):
+        """initializes the object"""
+        super().__init__()
 
-
-
-
+    def print_sorted(self):
+        """prints the sorted list"""
+        print(sorted(self))
